@@ -1,8 +1,8 @@
 import requests
 import os
 
-URL = "https://drive.google.com/file/d/1tyHpcXmddtJ12oxBqAkeJmRG2r8B7_w2/view?usp=sharing"
-OUTPUT_PATH = "steam.zip"
+URL = "https://brpucrs-my.sharepoint.com/:x:/g/personal/gabriel_brambila_edu_pucrs_br/IQCbZyf1jWiiR4aCipuP1w8iAcxohLRXIFcGnIlxiDmVnv0?e=HHlEYl"
+OUTPUT_PATH = "steam_games.csv"
 
 def download():
     if not os.path.exists(OUTPUT_PATH):
