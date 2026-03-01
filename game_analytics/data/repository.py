@@ -1,2 +1,2 @@
 class GameRepository:
-    pass
+  pass
