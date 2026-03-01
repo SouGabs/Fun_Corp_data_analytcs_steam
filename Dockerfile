@@ -12,7 +12,7 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 ENV PYTHONUNBUFFERED=1
-ENV PORT=10000  # Porta padrão caso rode localmente sem Render
+ENV PORT=10000  
 
 CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT}"]
  
