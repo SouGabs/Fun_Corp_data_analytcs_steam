@@ -8,10 +8,10 @@ load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
 engine = create_engine(DATABASE_URL)
 
-CSV_PATH = "steam.csv"
+CSV_URL = "https://huggingface.co/datasets/GabrielABS/meu-dataset-api/resolve/main/steam_games.csv"
 
 def load():
-    for chunk in pd.read_csv(CSV_PATH, chunksize=50000):
+    for chunk in pd.read_csv(CSV_URL, chunksize=50000):
         chunk = chunk.rename(columns={
             "AppID": "appid",
             "Name": "name",
